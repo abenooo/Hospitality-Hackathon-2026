@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from '@/components/ui/Header';
 import Footer from '@/components/ui/Footer';
+import ChallengeSection from './components/ChallengeSection';
 import HeroSection from './components/HeroSection';
 import ModulesBentoSection from './components/ModulesBentoSection';
 import RevenueImpactSection from './components/RevenueImpactSection';
-import TestimonialsSection from './components/TestimonialsSection';
 import CtaSection from './components/CtaSection';
 
 export default function Homepage() {
@@ -12,9 +12,9 @@ export default function Homepage() {
     <main className="min-h-screen bg-resort-bg">
       <Header />
       <HeroSection />
+      <ChallengeSection />
       <ModulesBentoSection />
       <RevenueImpactSection />
-      <TestimonialsSection />
       <CtaSection />
       <Footer />
     </main>

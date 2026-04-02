@@ -22,15 +22,16 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  title: 'Kuriftu Resorts — AI Resort Intelligence for Ethiopia',
+  title: 'Kuriftu Resorts — Hospitality Hackathon 2026',
   description:
-    'Kuriftu Resorts gives Ethiopian resort operators AI-powered pricing, demand forecasting, and personalized guest experiences — built for low-data environments.',
+    'Hackathon prototype: AI and ML for Ethiopian resort operations, guest experience, and revenue — including dynamic pricing, marketing automation, and predictive analytics.',
   icons: {
     icon: [{ url: '/assets/images/favicon.ico', type: 'image/x-icon' }],
   },
   openGraph: {
-    title: 'Kuriftu Resorts — AI Resort Intelligence',
-    description: 'AI-powered pricing, forecasting & guest experiences for Ethiopian resorts.',
+    title: 'Kuriftu Resorts — Hospitality Hackathon 2026',
+    description:
+      'AI-powered prototype for resort operations, guest experience, and revenue generation in Ethiopia.',
     images: [{ url: '/assets/images/app_logo.png', width: 1200, height: 630 }],
   },
 };

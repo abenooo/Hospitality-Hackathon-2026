@@ -4,12 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
 
-const FEATURES = [
-  'No credit card required',
-  'Setup in under 4 hours',
-  'Works offline immediately',
-  'Amharic + English support',
-];
+const HIGHLIGHTS = ['Hackathon prototype', 'Ethiopia hospitality focus', 'Operations · Guests · Revenue'];
 
 export default function CtaSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -25,53 +20,45 @@ export default function CtaSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 lg:py-28 bg-white">
-      <div className="max-w-5xl mx-auto px-5 sm:px-6">
-        <div className="gradient-animate rounded-[40px] p-10 sm:p-16 text-center relative overflow-hidden noise-overlay scroll-reveal">
-          {/* Blobs */}
-          <div className="absolute top-[-20%] left-[-10%] w-72 h-72 bg-white/5 blob-animate pointer-events-none" />
-          <div className="absolute bottom-[-15%] right-[-8%] w-56 h-56 bg-accent/10 blob-animate-2 pointer-events-none" />
+    <section ref={sectionRef} className="bg-resort-bg py-16 lg:py-22">
+      <div className="mx-auto max-w-3xl px-5 sm:px-6">
+        <div className="gradient-animate noise-overlay relative overflow-hidden rounded-[32px] p-10 text-center sm:p-14">
+          <div className="pointer-events-none absolute left-[-10%] top-[-20%] h-64 w-64 bg-white/5 blob-animate" />
 
           <div className="relative z-10">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-5 py-2 mb-8">
-              <span className="status-dot" />
-              <span className="text-xs font-700 text-accent uppercase tracking-widest">Live in Ethiopia Now</span>
-            </div>
-
-            <h2 className="font-display font-800 text-4xl sm:text-5xl lg:text-6xl text-white mb-4 leading-tight">
-              Ready to elevate your<br />
-              <span className="text-accent italic font-300">Kuriftu experience?</span>
+            <h2 className="font-display text-3xl font-800 leading-tight text-white sm:text-4xl">
+              Explore the demos
             </h2>
-            <p className="text-white/60 text-base sm:text-lg font-500 max-w-xl mx-auto mb-10 leading-relaxed">
-              Join the Kuriftu Resorts family — using AI to predict demand, maximize revenue, and delight every guest across Ethiopia&apos;s most iconic lakeside destinations.
+            <p className="mx-auto mt-4 max-w-lg text-base font-500 text-white/70">
+              Walk through the operator dashboard and guest experience flows we built for the challenge.
             </p>
 
-            {/* Features */}
-            <div className="flex flex-wrap justify-center gap-4 mb-10">
-              {FEATURES?.map((f) => (
-                <div key={f} className="inline-flex items-center gap-2 text-sm font-600 text-white/70">
-                  <Icon name="CheckCircleIcon" size={16} variant="solid" className="text-accent" />
+            <div className="mt-8 flex flex-wrap justify-center gap-3">
+              {HIGHLIGHTS.map((f) => (
+                <span
+                  key={f}
+                  className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-600 text-white/85"
+                >
+                  <Icon name="CheckCircleIcon" size={14} variant="solid" className="text-accent" />
                   {f}
-                </div>
+                </span>
               ))}
             </div>
 
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
                 href="/operator-dashboard"
-                className="inline-flex items-center gap-2.5 bg-accent text-white px-9 py-4 rounded-full font-700 text-base hover:bg-accent-light hover:scale-105 transition-all shadow-gold"
+                className="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-700 text-white shadow-gold transition-all hover:bg-accent-light hover:brightness-105"
               >
-                <Icon name="ChartBarIcon" size={18} variant="solid" />
-                Start Free Trial
+                <Icon name="ChartBarIcon" size={17} variant="solid" />
+                Operator dashboard
               </Link>
               <Link
                 href="/guest-experience"
-                className="inline-flex items-center gap-2.5 bg-white/10 text-white border border-white/20 px-9 py-4 rounded-full font-700 text-base hover:bg-white/20 transition-all"
+                className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-8 py-3.5 text-sm font-700 text-white transition-all hover:bg-white/20"
               >
-                <Icon name="PlayCircleIcon" size={18} />
-                See Guest AI Live
+                <Icon name="PlayCircleIcon" size={17} />
+                Guest AI flow
               </Link>
             </div>
           </div>
