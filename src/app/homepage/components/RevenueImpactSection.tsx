@@ -129,7 +129,7 @@ export default function RevenueImpactSection() {
               <span className="text-primary italic font-300">Real Ethiopian Resorts.</span>
             </h2>
             <p className="text-base text-resort-muted font-500 max-w-sm leading-relaxed">
-              Not projections. These are actual results from resort operators who deployed ResortIQ across the Rift Valley, Simien foothills, and Lalibela region.
+              Not projections. These are actual results from resort operators who deployed Kuriftu Resorts across the Rift Valley, Simien foothills, and Lalibela region.
             </p>
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function RevenueImpactSection() {
         <div className="grid lg:grid-cols-2 gap-8 items-start">
           {/* Left: Before / After Cards */}
           <div className="space-y-4 scroll-reveal">
-            <p className="text-xs font-700 uppercase tracking-widest text-resort-muted mb-5">Before → After ResortIQ</p>
+            <p className="text-xs font-700 uppercase tracking-widest text-resort-muted mb-5">Before → After Kuriftu Resorts</p>
             {BEFORE_AFTER.map((item, i) => (
               <div
                 key={item.label}
@@ -203,7 +203,7 @@ export default function RevenueImpactSection() {
                   <span className="text-accent italic font-300">in 30 days.</span>
                 </h3>
                 <p className="text-white/60 text-sm font-500 leading-relaxed mb-8">
-                  Average ResortIQ deployment generates 2.4M ETB in additional annual revenue for a 40-room property. Setup in under 4 hours.
+                  Average Kuriftu Resorts deployment generates 2.4M ETB in additional annual revenue for a 40-room property. Setup in under 4 hours.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mb-8">

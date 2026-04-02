@@ -46,7 +46,7 @@ export default function OperatorDashboard() {
         <div className="flex items-center gap-3 border-b border-white/8 px-6 py-5">
           <AppLogo size={34} />
           <div>
-            <span className="font-display text-base font-800 tracking-tight text-white">ResortIQ</span>
+            <span className="font-display text-base font-800 tracking-tight text-white">Kuriftu Resorts</span>
             <p className="text-[10px] font-600 uppercase tracking-widest text-white/30">Intelligence Layer</p>
           </div>
         </div>

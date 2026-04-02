@@ -22,14 +22,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  title: 'ResortIQ — AI Resort Intelligence for Ethiopia',
+  title: 'Kuriftu Resorts — AI Resort Intelligence for Ethiopia',
   description:
-    'ResortIQ gives Ethiopian resort operators AI-powered pricing, demand forecasting, and personalized guest experiences — built for low-data environments.',
+    'Kuriftu Resorts gives Ethiopian resort operators AI-powered pricing, demand forecasting, and personalized guest experiences — built for low-data environments.',
   icons: {
     icon: [{ url: '/assets/images/favicon.ico', type: 'image/x-icon' }],
   },
   openGraph: {
-    title: 'ResortIQ — AI Resort Intelligence',
+    title: 'Kuriftu Resorts — AI Resort Intelligence',
     description: 'AI-powered pricing, forecasting & guest experiences for Ethiopian resorts.',
     images: [{ url: '/assets/images/app_logo.png', width: 1200, height: 630 }],
   },

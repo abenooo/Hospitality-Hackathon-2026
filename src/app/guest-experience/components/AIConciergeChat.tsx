@@ -15,7 +15,7 @@ const INITIAL_MESSAGES: Message[] = [
   {
     id: 1,
     role: 'ai',
-    text: "Selam! 👋 I'm your ResortIQ AI Concierge. I know you've been here for 2 days and love hiking. Today I'd recommend the Simien Mountains sunrise trek — only 12 spots left. Want me to reserve one for you?",
+    text: "Selam! 👋 I'm your Kuriftu Resorts AI Concierge. I know you've been here for 2 days and love hiking. Today I'd recommend the Simien Mountains sunrise trek — only 12 spots left. Want me to reserve one for you?",
     time: '09:02',
     lang: 'en',
   },
@@ -130,7 +130,7 @@ export default function AIConciergeChat() {
                     <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-400 rounded-full border-2 border-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-700 text-resort-foreground">ResortIQ Concierge</p>
+                    <p className="text-sm font-700 text-resort-foreground">Kuriftu Resorts Concierge</p>
                     <div className="flex items-center gap-1.5">
                       <span className="status-dot" />
                       <p className="text-[11px] text-primary font-600">Online · Responds in 2s</p>
